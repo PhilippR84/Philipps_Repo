@@ -37,3 +37,5 @@ def draw_tree(height):
 # Beispielaufruf mit einer Höhe von 5
 draw_tree(7)
 
+
+print("TEST")
