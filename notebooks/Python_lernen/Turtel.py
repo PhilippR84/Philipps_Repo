@@ -1,5 +1,4 @@
 import turtle
-
 box = turtle.Turtle()
 box.speed(4)
 

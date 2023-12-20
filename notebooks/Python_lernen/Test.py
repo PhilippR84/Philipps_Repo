@@ -87,3 +87,6 @@ print (a.replace("l", "1"))
 
 """
 
+a = "Hello World      "
+print (a.strip()+ "Baum")
+print (a + "Baum")
