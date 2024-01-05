@@ -20,7 +20,7 @@ print("");print("")
      X     X
     X       X
 
-"""
+
 def draw_tree(height):
     for i in range(1,(height+1)): 
         spaces = " " * (height - i)
@@ -36,3 +36,7 @@ draw_tree(7)
 
 
 print("TEST123")
+"""
+
+vt_Names = ["Philipp", "Alex", "Jonas", "Robin"]
+print(vt_Names[2])
