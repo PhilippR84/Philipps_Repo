@@ -1,33 +1,30 @@
 import random
+
 my_datei = open("C:\\Users\\Phili\\OneDrive\\DHBW\\VSCode\\Philipps_Repo\\notebooks\\Python_lernen\\Hangman_words.txt","r",encoding="UTF8")
+int_Rows_datei = 0
+Underscore_String = []
+eingegebene_Buchstaben = []
+correct_guess = 0
 
 data = my_datei.read().splitlines()
 
-int_Rows_datei = 0
 for x in data:
     int_Rows_datei = int_Rows_datei + 1
 
 Random_int = (random.randint(0,int_Rows_datei))
 Random_int = Random_int  - 1
 Hangman_Word = data[Random_int]
-Hangman_Word = "Tree"
 print("Willkommen zu HANGMAN")
 Len_word = (len(Hangman_Word))
 Hangman_Word = Hangman_Word.lower()
 print("Das gesuchte Wort ist " + str(Len_word) + " Buchstaben lang")
 
-Underscore_String = []
 i = 1
 while i <= Len_word:
     Underscore_String.append("_")
-
     i = i + 1
 
 print(" ".join(Underscore_String))
-
-eingegebene_Buchstaben = []
-correct_guess = 0
-print(Hangman_Word)
 
 while correct_guess < Len_word:
     input_Letter = input("Welcher Buchstabe? Groß und Kleinschreibung egal!:  ")
