@@ -15,7 +15,6 @@ print(get_Grade(85))
 
 a = "100"
 b = "300"
-
 print("A") if a > b else print("=") if a == b else print("B")
 
 
@@ -33,8 +32,6 @@ def XOR (a, b):
         print("0")
     else:
         print("1")
-    #elif (a == 0 or b == 0) and (a == 1 or b == 1):
-    #  print("1")
 
 def AND (a, b):
     if a == 1 and b == 1:
@@ -69,7 +66,6 @@ def XNOR (a, b):
 a = 1 
 b = 0
 
-print((a,b))
 """
 
 
@@ -83,5 +79,4 @@ def Draw(a):
         print(numbers)
 Draw(5)
 
-def PrimeNumbers(a)
     
