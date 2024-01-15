@@ -66,7 +66,7 @@ def XNOR (a, b):
 a = 1 
 b = 0
 
-"""
+
 
 
 def Draw(a):
@@ -78,5 +78,15 @@ def Draw(a):
         i += 1
         print(numbers)
 Draw(5)
+"""
 
+i = 0
+y = 0
+#Wenn i gleich 0 --> Nein ODER y über 0
+if not i:
+    print("Hallo")
     
+
+#Wenn i nicht gesetzt ist.  ist gesetzt oder y 
+#if not i or y:
+#    print("Not")
