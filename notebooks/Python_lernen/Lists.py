@@ -11,6 +11,7 @@ for x in List:
 print(new_List)
 """
 import datetime
+import re
 # Track all financial transactions including type amounut and date
 #Use a list of diectionaries where each 
 
@@ -56,3 +57,6 @@ def sum_up(my_key):
     return (sum(amount))
 income = sum_up("price")
 print(income)
+
+def is_valid_date_formate(date_String):
+    date_pattern = re.compile(r'^\d{4}-\d{2}-\{2}$')
