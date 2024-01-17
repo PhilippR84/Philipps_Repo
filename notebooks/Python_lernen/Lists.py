@@ -15,7 +15,6 @@ import re
 # Track all financial transactions including type amounut and date
 #Use a list of diectionaries where each 
 
-
 Purchase1 = {
   "Type": "Banane",
   "amount": "4",
@@ -58,5 +57,23 @@ def sum_up(my_key):
 income = sum_up("price")
 print(income)
 
-def is_valid_date_formate(date_String):
-    date_pattern = re.compile(r'^\d{4}-\d{2}-\{2}$')
+
+student = {
+    'name': 'Rainer Zufall',
+    'Alter': 20,
+    'Kurse': ['Programmieren', 'Theoretische Informatik', 'Lineare Alegbra']
+}
+
+#Ausgaebe mit "f" -> Ausdrücke können in den String verwendet werden
+print(f"Name: {student['name']}")
+print(f"Alter: {student['Alter']}")
+print(f"Kurse: {', '.join(student['Kurse'])}")
+
+#Werte hinzufügen
+student['Wohnort'] = 'WÜ'
+
+#Ändern eines Eintrages
+student['Alter'] = 23
+
+print(f"Alter: {student['Alter']}")
+print(f"Wohnort: {student['Wohnort']}")
