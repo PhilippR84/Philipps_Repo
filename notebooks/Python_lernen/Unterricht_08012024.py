@@ -78,7 +78,7 @@ def Draw(a):
         i += 1
         print(numbers)
 Draw(5)
-"""
+
 
 i = 0
 y = 0
@@ -90,3 +90,4 @@ if not i:
 #Wenn i nicht gesetzt ist.  ist gesetzt oder y 
 #if not i or y:
 #    print("Not")
+"""

@@ -1,0 +1,44 @@
+
+"""
+from faker import Faker
+import random
+
+fake = Faker()
+print(fake.name())
+
+students = []
+
+for _ in range(10):
+    student = {
+        "name": fake.name(),
+        "age": random.randint(18, 25),
+        "major": random.choice(["Computer Science", "Mathematics", "Physics"]),
+        "gpa":round(random.uniform(2.0, 4.0), 2),
+        "is_international": random.choice([True, False])
+    }
+    students.append(student)
+
+
+
+print(students)
+print("_-----------------------------")
+for i in students:
+    fullname = (i['name'])
+    Vorname = fullname.split(" ",1)
+    Nachname = fullname.split(" ",2)
+    print(Vorname)
+    print(Nachname)
+
+
+
+
+Idee für Daily Coding:
+- Faker funktionsweise noch weiter üben
+- Dictionaries
+- Liste mit Dictionaries
+- Split
+- Textersetzung bei Mr. oder Jr.
+- cache 
+"""
+
+
