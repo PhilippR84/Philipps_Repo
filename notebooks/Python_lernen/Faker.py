@@ -10,7 +10,7 @@ def build_email(Person, Email_Endungen):
     return Email
 
 def RandomInt():
-    randomint = random.randomint(10)
+    randomint = random.randint(0,10)
     return randomint
 
 for _ in range(10):
@@ -23,15 +23,15 @@ for _ in range(10):
     Person["Email-Adresse"] = Email
     Personen.append(Person)
 
-#Hier muss noch was gemacht werden!
-for Vorname in Personen["Vorname"]:
+for Einzelne_Person in Personen:
     i = 0
-    for Vorname2 in Personen["Vorname"]:
-        if Vorname == Vorname2:
+    for Person in Personen:
+        if Einzelne_Person["Vorname"] == Person["Vorname"]:
             i = i + 1
 
 randomint = RandomInt()
-print(Personen[1][Vorname])
+print(f"Name: {Personen[randomint]["Vorname"]} {Personen[randomint]["Nachname"]}, Beruf: {Personen[randomint]["Beruf"]}") 
+print(f"Kontaktieren können Sie mich unter der E-Mail {Personen[randomint]["Email-Adresse"]}")
 
 
     
